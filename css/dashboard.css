@@ -172,14 +172,14 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
-
 /*
  * Top navigation
  * Hide default border to remove 1px line.
- */
-.navbar-fixed-top {
+*/
+.navbar-fixed-top{
   position: fixed;
-  top: 0; left: 0; 
+  top: 0;
+  left: 0; 
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;    
@@ -188,12 +188,10 @@ body {
 }
 .navbar-header{
 }
-
 .input-group-btn{
   display: inline;
   margin: 0px;
 }
-
 .form-control{
 display:inline;
 border-radius: 0px;

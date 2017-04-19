@@ -59,29 +59,23 @@ angular.element(document).ready(function () {
 });
 
 var lastScrollTop = $(window).scrollTop();
-
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
-   console.log(st);
-
    if (st <= 100) {
     $('nav').animate({
             top: "0"
-        }, 100);
-
-      $('.sidebar').animate({
+        }, 50);
+    $('.sidebar').animate({
             top: "7.33%"
-        }, 100);      
+        }, 50);      
    }
    else if (lastScrollTop <= 100 && st > lastScrollTop){
-       console.log('Scroll down');
         $('nav').animate({
             top: "-20%"
-        }, 100); 
-
+        }, 70); 
         $('.sidebar').animate({
             top: "-5%"
-        }, 100);
+        }, 70);
    } 
    lastScrollTop = st;
 });
