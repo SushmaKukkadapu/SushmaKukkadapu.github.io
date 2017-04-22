@@ -60,22 +60,22 @@ angular.element(document).ready(function () {
 
 var lastScrollTop = $(window).scrollTop();
 $(window).scroll(function(event){
-   var st = $(this).scrollTop();
-   if (st <= 100) {
+  var st = $(this).scrollTop();
+  if (st <= 100){
     $('nav').animate({
-            top: "0"
-        }, 50);
+      top: "0"
+    }, 50);
     $('.sidebar').animate({
-            top: "7.33%"
-        }, 50);      
-   }
-   else if (lastScrollTop <= 100 && st > lastScrollTop){
-        $('nav').animate({
-            top: "-20%"
-        }, 70); 
-        $('.sidebar').animate({
-            top: "-5%"
-        }, 70);
-   } 
-   lastScrollTop = st;
+      top: "7.33%"
+    }, 50);
+  }
+  else if(lastScrollTop <= 100 && st > lastScrollTop){
+    $('nav').animate({
+      top: "-20%"
+    }, 70);
+    $('.sidebar').animate({
+      top: "-5%"
+    }, 70);
+  }
+  lastScrollTop = st;
 });

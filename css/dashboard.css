@@ -177,14 +177,14 @@ body {
  * Hide default border to remove 1px line.
 */
 .navbar-fixed-top{
-  position: fixed;
-  top: 0;
-  left: 0; 
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;    
-  padding-bottom: 0px;
-  border-color: #999;
+position: fixed;
+top: 0;
+left: 0;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 15px;
+padding-bottom: 0px;
+border-color: #999;
 }
 .navbar-header{
 }
