@@ -64,18 +64,18 @@ $(window).scroll(function(event){
   if (st <= 100){
     $('nav').animate({
       top: "0"
-    }, 50);
+    }, 40);
     $('.sidebar').animate({
-      top: "7.33%"
-    }, 50);
+      top: "7.4%"
+    }, 40);
   }
   else if(lastScrollTop <= 100 && st > lastScrollTop){
     $('nav').animate({
       top: "-20%"
-    }, 70);
+    }, 35);
     $('.sidebar').animate({
       top: "-5%"
-    }, 70);
+    }, 50);
   }
   lastScrollTop = st;
 });
